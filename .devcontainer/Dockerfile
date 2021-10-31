@@ -1,8 +1,9 @@
-FROM debian
+FROM mcr.microsoft.com/vscode/devcontainers/universal:1-linux
 
-ARG arg1
-ARG arg2
-ARG arg3
-
-ENV a=b
-ENV c=d
+# ** [Optional] Uncomment this section to install additional packages. **
+# USER root
+#
+# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+#     && apt-get -y install --no-install-recommends <your-package-list-here>
+#
+# USER codespace
